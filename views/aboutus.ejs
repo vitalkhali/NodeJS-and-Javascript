@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About Us</title>
+
+<link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/aboutus.css">
+
+  <!-- Font Awesome -->
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/index_style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <%- include('header_index') %>
+
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">可以用电邮箱 <button class="contact-button btn btn-lg btn-light" name="button">
+              <a href="mailto: Saudagarmuar@hotmail.com">Send Email <i class="far fa-paper-plane"></i></a>
+            </button> 或者微信联系我们.</h1>
+
+          <img class="contact-us-image" src="images/contact-image.jpg" alt="">
+
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="images/customer-support.png" alt="iphone-mockup">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fab fa-stripe-s fa-4x"></i>
+          <h3 class="feature-title">Simple.</h3>
+          <p>简单</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fab fa-dochub fa-4x"></i>
+          <h3 class="feature-title">Direct</h3>
+          <p>直接</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fab fa-medium-m fa-4x"></i>
+          <h3 class="feature-title">Methodical.</h3>
+          <p>规划</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+</body>
+
+<%- include('footer_index') %>

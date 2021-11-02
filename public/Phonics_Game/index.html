@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class='spinner-wrapper'>
+      <div class="spinner"></div>
+  </div>
+
+  <audio style="display:none;" controls preload="auto">
+    <source src="phonics_sounds/correct_sound.mp3" type="">
+    <source src="phonics_sounds/wrong_sound.mp3" type="">
+    <source src="phonics_sounds/a.mp3" type="">
+    <source src="phonics_sounds/e.mp3" type="">
+    <source src="phonics_sounds/i.mp3" type="">
+
+    <source src="sounds/o.mp3" type="">
+  </audio>
+
+  <div class="wrap">
+    <div class="wrap-in">
+      <div class="rw">
+        <div class="t-l inline push green" id='a'><span class="a">æ</span></div>
+        <div class="t-r inline push red " id='e'><span class="e">e</span></div>
+      </div>
+      <div class="rw">
+        <div class="b-l inline push yellow " id='i'><span class="i">ɪ</span></div>
+        <div class="b-r inline push blue " id='o'><span class="o">ɒ</span></div>
+      </div>
+    </div>
+    <div class="center">
+      <h1 class="brand">Phonics<span class="small">®</span></h1>
+      <div class="rw">
+        <div class="display inline">
+          <h1 class="count led-off">--</h1>
+          <h3 class="label">COUNT</h3>
+        </div>
+        <div class="btn-box inline">
+          <div class="round-btn full-red but clickable" id="start"></div>
+          <h3 class="label">START/RESET</h3>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+
+  let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+  window.addEventListener('load', function () {
+      // spinnerWrapper.style.display = 'none';
+      console.log("loaded");
+      spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+  });
+
+  </script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
+
+
+</html>
